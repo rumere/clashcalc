@@ -1,3 +1,28 @@
+/*
+ * MIT License
+ *
+ * Copyright (c) 2018 golf-clash-notebook
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+// clubs is a package for selecting and building the attributes for clubs
 package clubs
 
 import (
@@ -74,6 +99,27 @@ func (c Club) SetCorrection() {
 	}
 }
 
-func (c Club) GetClub(cdb clubdb.ClubData) error {
-	idx := slices.IndexFunc(cdb, func(x clubdb.C) bool { return c.Key == "key1" })
+func (c Club) GetClub(cdb clubdb.ClubData, n string, l int64) error {
+	found := false
+	for i := range cdb {
+		if cdb[i].Name == n && cdb[i].Level == l {
+			found = true
+			c.Accuracy = cdb[i].Accuracy
+			c.BackSpin = cdb[i].BackSpin
+			c.BallGuide = cdb[i].BallGuide
+			c.Curl = cdb[i].Curl
+			c.Level = cdb[i].Level
+			c.Name = cdb[i].Name
+			c.Power = cdb[i].Power
+			c.TopSpin = cdb[i].TopSpin
+			c.SetCategory(cdb[i].Category)
+			c.SetCorrection()
+		}
+	}
+
+	if found {
+		return nil
+	} else {
+		return fmt.Errorf("ERROR: Unable to load club %s:%d", n, l)
+	}
 }
