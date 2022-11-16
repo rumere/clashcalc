@@ -1,0 +1,111 @@
+[{
+    "name": "The Rocket",
+    "level": 1,
+    "category": "Driver",
+    "power": 190,
+    "accuracy": 50,
+    "top-spin": 0,
+    "back-spin": 0,
+    "curl": 12,
+    "ball-guide": 2.0
+},{
+    "name": "The Rocket",
+    "level": 2,
+    "category": "Driver",
+    "power": 190,
+    "accuracy": 70,
+    "top-spin": 9,
+    "back-spin": 9,
+    "curl": 12,
+    "ball-guide": 2.0
+},{
+    "name": "The Rocket",
+    "level": 3,
+    "category": "Driver",
+    "power": 192,
+    "accuracy": 70,
+    "top-spin": 9,
+    "back-spin": 9,
+    "curl": 26,
+    "ball-guide": 2.4
+},{
+    "name": "The Rocket",
+    "level": 4,
+    "category": "Driver",
+    "power": 198,
+    "accuracy": 76,
+    "top-spin": 9,
+    "back-spin": 26,
+    "curl": 26,
+    "ball-guide": 2.4
+},{
+    "name": "The Rocket",
+    "level": 5,
+    "category": "Driver",
+    "power": 198,
+    "accuracy": 76,
+    "top-spin": 18,
+    "back-spin": 26,
+    "curl": 30,
+    "ball-guide": 3.1
+},{
+    "name": "The Rocket",
+    "level": 6,
+    "category": "Driver",
+    "power": 202,
+    "accuracy": 83,
+    "top-spin": 18,
+    "back-spin": 52,
+    "curl": 30,
+    "ball-guide": 3.1
+},{
+    "name": "The Rocket",
+    "level": 7,
+    "category": "Driver",
+    "power": 204,
+    "accuracy": 83,
+    "top-spin": 18,
+    "back-spin": 52,
+    "curl": 44,
+    "ball-guide": 3.6
+},{
+    "name": "The Rocket",
+    "level": 8,
+    "category": "Driver",
+    "power": 204,
+    "accuracy": 83,
+    "top-spin": 23,
+    "back-spin": 52,
+    "curl": 54,
+    "ball-guide": 4.2
+},{
+    "name": "The Rocket",
+    "level": 9,
+    "category": "Driver",
+    "power": 206,
+    "accuracy": 83,
+    "top-spin": 37,
+    "back-spin": 70,
+    "curl": 54,
+    "ball-guide": 4.2
+},{
+    "name": "The Rocket",
+    "level": 10,
+    "category": "Driver",
+    "power": 211,
+    "accuracy": 90,
+    "top-spin": 37,
+    "back-spin": 98,
+    "curl": 54,
+    "ball-guide": 4.2
+},{
+    "name": "The Extra Mile",
+    "level": 1,
+    "category": "Driver",
+    "power": 220,
+    "accuracy": 0,
+    "top-spin": 20,
+    "back-spin": 0,
+    "curl": 15,
+    "ball-guide": 1.3
+}]
